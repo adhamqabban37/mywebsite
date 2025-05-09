@@ -1,114 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Adham Qab | Tech Innovator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adham Qab Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- React & ReactDOM (UMD) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Framer Motion UMD -->
+  <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+  <!-- React Icons UMD -->
+  <script src="https://unpkg.com/react-icons/umd/react-icons.min.js"></script>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section relative flex items-center justify-center text-center overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <div class="relative z-10 px-6 max-w-4xl">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 glow">
-                ADHAM <span class="red-accent">QAB</span>
-            </h1>
-            <div class="typewriter">
-                <h2 class="text-2xl md:text-3xl gold-accent tech-font">TECH INNOVATOR & AI ENTHUSIAST</h2>
-            </div>
-            <p class="text-lg md:text-xl mt-8 mb-10">
-                "Shaping the future with AI and emerging technologies"
-            </p>
-            <div class="flex justify-center space-x-6">
-                <a href="https://www.instagram.com/adhamqab" target="_blank" class="social-icon instagram">
-                    <i class="fab fa-instagram text-2xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/adam-qab-620856187/" target="_blank" class="social-icon linkedin">
-                    <i class="fab fa-linkedin-in text-2xl"></i>
-                </a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about" class="text-white text-4xl">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-filter backdrop-blur-lg py-4 px-6 shadow-lg">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold tech-font">
-                <span class="red-accent">A</span>DHAM <span class="gold-accent">Q</span>AB
-            </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#achievements" class="nav-link">Achievements</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <button class="md:hidden text-white text-2xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-space-blue">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="section-title">// ABOUT <span class="red-accent">ME</span></h2>
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2">
-                    <div class="relative">
-                        <div class="w-64 h-64 bg-red-500 rounded-full mx-auto floating"></div>
-                        <div class="absolute -inset-4 border-2 border-gold-500 rounded-full opacity-20"></div>
-                    </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <h3 class="text-3xl font-bold mb-6 tech-font">I'M <span class="red-accent">ADHAM QAB</span></h3>
-                    <p class="text-lg mb-6 leading-relaxed">
-                        A tech enthusiast passionate about AI, digital innovation, and building tools that help others. Originally from Yemen and based in the U.S., I'm on a mission to use AI and emerging technologies to shape the future.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4 mb-8">
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt mr-3 gold-accent"></i> <span>United States</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-code mr-3 gold-accent"></i> <span>Full Stack Developer</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-brain mr-3 gold-accent"></i> <span>AI Specialist</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-rocket mr-3 gold-accent"></i> <span>Tech Innovator</span>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="tech-badge"><i class="fab fa-python mr-2 tech-icon"></i> Python</span>
-                        <span class="tech-badge"><i class="fas fa-robot mr-2 tech-icon"></i> AI/ML</span>
-                        <span class="tech-badge"><i class="fab fa-js mr-2 tech-icon"></i> JavaScript</span>
-                        <span class="tech-badge"><i class="fab fa-react mr-2 tech-icon"></i> React</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- Projects Section (continue adding content as needed) -->
-    <section id="projects" class="py-20 bg-black">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="section-title">// MY <span class="red-accent">PROJECTS</span></h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project cards go here -->
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+  <div id="root"></div>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
